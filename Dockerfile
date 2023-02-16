@@ -1,4 +1,4 @@
-FROM golang:1.11 AS builder
+FROM golang:alpine AS builder
 
 WORKDIR /go/src/github.com/upmc-enterprises/registry-creds
 COPY . .
