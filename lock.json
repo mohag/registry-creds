@@ -27,7 +27,7 @@
             ]
         },
         {
-            "name": "github.com/Sirupsen/logrus",
+            "name": "github.com/sirupsen/logrus",
             "branch": "master",
             "revision": "7f4b1adc791766938c29457bed0703fb9134421a",
             "packages": [
@@ -221,7 +221,7 @@
             ]
         },
         {
-            "name": "github.com/imdario/mergo",
+            "name": "dario.cat/mergo",
             "version": "0.2.2",
             "revision": "3e95a51e0639b4cf372f2ccf74c86749d747fbdc",
             "packages": [

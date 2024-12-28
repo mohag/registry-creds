@@ -27,7 +27,7 @@ all: container
 
 .PHONY: build
 build: main.go
-	GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -a -installsuffix cgo -o $(BIN) --ldflags '-w' $<
+	GO111MODULE=on GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -a -installsuffix cgo -o $(BIN) --ldflags '-w' $<
 
 .PHONY: container
 container: build
@@ -44,5 +44,5 @@ clean:
 	rm -f $(BIN)
 
 .PHONY: test
-test: clean
+test:
 	go test -v $(go list ./... | grep -v vendor)
